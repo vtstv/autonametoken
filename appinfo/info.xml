@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>autonametoken</id>
+    <name>Auto Name Token</name>
+    <summary>Automatically use file name as share link token</summary>
+    <description>This app automatically sets the share link token to the file name when creating public shares</description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>Murr</author>
+    <namespace>AutoNameToken</namespace>
+    <website>https://github.com/vtstv</website>
+    <category>files</category>
+    <dependencies>
+        <nextcloud min-version="25" max-version="30"/>
+    </dependencies>
+</info>
