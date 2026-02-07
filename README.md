@@ -17,6 +17,7 @@ When you create a public share link, the app automatically:
 - Uses the file name (without extension) as the share token
 - Sanitizes the name (removes special characters, keeps alphanumeric, dash, underscore)
 - Limits to 15 characters
+- Checks for duplicate tokens and appends random numbers (10-99) if needed
 - Falls back to MD5 hash if sanitized name is empty
 
 ## Example
@@ -25,3 +26,6 @@ File: `My Document.pdf`
 Share link: `https://cloud.example.com/s/MyDocument`
 
 Instead of: `https://cloud.example.com/s/a8Kx9pQz2`
+
+If you share another file with the same name:
+Share link: `https://cloud.example.com/s/MyDocument47`
